@@ -1,18 +1,28 @@
+// have to figure out a way to refractor the code
+// what I don't understand is that if i declare a 
+// function before the generate() function, errors arise
+
 let hideContent = document.getElementById("foodContent")
 let transformHeading = document.getElementById("heading")
 
+// hiding the content, displayed when generate is called
 hideContent.style.display = "none"
 
 function generate() {
 fetch("https://www.themealdb.com/api/json/v1/1/random.php")
     .then(response => response.json())
     .then(data => {
-        
+
+        // enlarge text and change message with randomMsg array
+        transformHeading.style.fontSize = "2rem"
+        transformHeading.style.lineHeight = "1.5"
+        transformHeading.style.color = "yellow"
+        transformHeading.style.marginTop = "15px"
+        transformHeading.textContent = "What to eat? Maybe this? 😁"
+
         // displays the content when called
         if (hideContent.style.display === "none") {
             hideContent.style.display = "block"
-        } else {
-            hideContent.style.display = "none"
         }
 
         // title
