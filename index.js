@@ -15,9 +15,7 @@ fetch("https://www.themealdb.com/api/json/v1/1/random.php")
 
         // enlarge text and change message with randomMsg array
         transformHeading.style.fontSize = "2rem"
-        transformHeading.style.lineHeight = "1.5"
-        transformHeading.style.color = "yellow"
-        transformHeading.style.marginTop = "15px"
+        transformHeading.style.color = "white"
         transformHeading.textContent = "What to eat? Maybe this? 😁"
 
         // displays the content when called
