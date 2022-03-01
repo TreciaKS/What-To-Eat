@@ -1,5 +1,5 @@
 # What-To-Chow
-A dish generator to help you decide what you can eat. Chow means to eat in south african lingo :)
+A dish generator to help you decide what you can eat. Chow means to eat in South African lingo :)
 
 <h2>Current Challenge</h2>
 <ul>
